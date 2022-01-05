@@ -48,7 +48,7 @@ public class PostService {
 	}
 
 	public Post fromDTO(PostDTO obj) {
-		return new Post(obj.getId(), obj.getDate(), obj.getTitle(), obj.getBody());
+		return new Post(obj.getId(), obj.getDate(), obj.getTitle(), obj.getBody(), obj.getAuthor());
 	}
 	
 }

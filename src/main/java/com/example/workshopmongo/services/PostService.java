@@ -51,4 +51,7 @@ public class PostService {
 		return new Post(obj.getId(), obj.getDate(), obj.getTitle(), obj.getBody(), obj.getAuthor());
 	}
 	
+	public List<Post> findByTitle(String text) {
+		return userRepository.findByTitleContainingIgnoreCase(text);
+	}
 }
